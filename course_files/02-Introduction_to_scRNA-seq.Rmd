@@ -79,7 +79,7 @@ Broadly speaking, a typical scRNA-seq protocol consists of the following steps (
 - Preparing the sequencing library with adequate molecular adapters. 
 - Sequencing, usually with paired-end Illumina protocols.
 - Processing the raw data to obtain a count matrix of genes-by-cells
-- Carrying several downstream analysis (the focus of this course).
+- Carrying out several downstream analysis (the focus of this course).
 
 This course deals mostly with the last step of this workflow, but it is important to consider some of the steps that come before that, as they have an impact on the properties of the data we get. 
 
@@ -160,7 +160,7 @@ One disadvantage of tag-based protocols is that, being restricted to one end of 
 
 The difference between 5' and 3' tag-based protocols is which end of the transcript is sequenced. 
 Although 3' protocols are more commonly used, many protocols now allow sequencing from either end (e.g. [10x Chromium supports both](https://kb.10xgenomics.com/hc/en-us/articles/360000939852-What-is-the-difference-between-Single-Cell-3-and-5-Gene-Expression-libraries-)). 
-The advantage of 5'-end sequencing is that we obtain information about the transcription start site (TSS), which allows to explore whether there is differential TSS usage across cells. 
+The advantage of 5'-end sequencing is that we obtain information about the transcription start site (TSS), which allows exploring whether there is differential TSS usage across cells. 
 :::
 
 
@@ -180,7 +180,7 @@ Clearly, full-length transcript quantification will be more appropriate if one i
 If one is interested in rare cell types (for which known markers are not available), then more cells need to be sequenced, which will increase the cost of the experiment. 
 A useful tool to estimate how many cells to sequence has been developed by the Satija Lab: https://satijalab.org/howmanycells/.
 
-Another way to decide on which method to use, is to rely on studies dedicated to comparing different protocols. These studies focus on issues such as sensitivity (how many genes are detected per cell), their accuracy (e.g. compared to bulk RNA-seq) and in their ability to recover all cell types present in a sample (tested on commercially available cell mixtures). 
+Another way to decide on which method to use, is to rely on studies dedicated to comparing different protocols. These studies focus on issues such as sensitivity (how many genes are detected per cell), accuracy (e.g. compared to bulk RNA-seq) and ability to recover all cell types present in a sample (tested on commercially available cell mixtures). 
 For example, a study by [Ding et al. 2020](https://doi.org/10.1038/s41587-020-0465-8) illustrates how low-throughput methods have higher sensitivity compared to high-throughput methods, such as 10x Chromium (Figure below). 
 On the other hand, low-throughput methods did not capture some of the rarer cell types in their samples, leading to an incomplete characterisation of the cell population. 
 
